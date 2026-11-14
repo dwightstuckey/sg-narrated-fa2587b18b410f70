@@ -1068,7 +1068,11 @@ setTimeout(()=>{const t=document.getElementById('hint');if(t)t.style.opacity=0;}
     window.SG.setStep(m.step||0);
     const sl=nav[n], one=sl.querySelector('.cdcol li.one1');
     if(one){const st=sl.querySelector('.cdstage'); one.classList.toggle('shown',!!(st&&st.classList.contains('final1')));}
-    tips(n,m.tip);}
+    tips(n,m.tip);
+    // opening drum roll: cover hidden until the crash, then re-activated so its reveals play from the start
+    const c0=nav[0];
+    if(n===0&&m.pre){c0.classList.remove('active');}
+    else if(n===0&&!c0.classList.contains('active')){void c0.offsetWidth;c0.classList.add('active');}}
   addEventListener('message',e=>{const m=e.data; if(!m||m.sg!=='show')return; show(m);
     parent.postMessage({sg:'ack',slide:window.SG.cur()+1,step:window.SG.step()},'*');});
   parent.postMessage({sg:'ready',n:window.SG.N()},'*');
