@@ -1,5 +1,9 @@
 {
- "total": 300.0,
+ "total": 302.65,
+ "drum": {
+  "start": 271.336,
+  "crash": 273.936
+ },
  "tempo": 1.1,
  "segGap": 0.425,
  "partGap": 0.28,
@@ -210,7 +214,7 @@
    "id": "countdown",
    "slide": 19,
    "start": 232.743,
-   "speechEnd": 281.974,
+   "speechEnd": 284.624,
    "actions": [
     {
      "t": 241.446,
@@ -258,24 +262,25 @@
      "k": 9
     },
     {
-     "t": 271.806,
+     "t": 273.636,
      "a": "step",
-     "k": 10
+     "k": 10,
+     "crash": 273.936
     }
    ],
-   "end": 282.399,
+   "end": 285.049,
    "title": "Top 10 countdown",
    "show": 232.467
   },
   {
    "id": "close",
    "slide": 20,
-   "start": 282.399,
-   "speechEnd": 299.2,
+   "start": 285.049,
+   "speechEnd": 301.85,
    "actions": [],
-   "end": 300.0,
+   "end": 302.65,
    "title": "Thank you",
-   "show": 282.124
+   "show": 284.774
   }
  ],
  "captions": [
@@ -680,43 +685,43 @@
    "t": "And number one? My favorite."
   },
   {
-   "s": 271.89,
-   "e": 274.92,
+   "s": 274.54,
+   "e": 277.57,
    "t": "Commissions paid in ten days. Ten days!"
   },
   {
-   "s": 274.92,
-   "e": 279.07,
+   "s": 277.57,
+   "e": 281.72,
    "t": "There's My Balance, with View Commissions one click away."
   },
   {
-   "s": 279.07,
-   "e": 282.4,
+   "s": 281.72,
+   "e": 285.05,
    "t": "That's a big deal for your cash flow."
   },
   {
-   "s": 282.4,
-   "e": 284.25,
+   "s": 285.05,
+   "e": 286.9,
    "t": "Thanks for joining us."
   },
   {
-   "s": 284.25,
-   "e": 289.44,
+   "s": 286.9,
+   "e": 292.09,
    "t": "This week, log in at covercore.services and quote your first creator client."
   },
   {
-   "s": 289.44,
-   "e": 290.6,
+   "s": 292.09,
+   "e": 293.25,
    "t": "Questions?"
   },
   {
-   "s": 290.6,
-   "e": 296.66,
+   "s": 293.25,
+   "e": 299.31,
    "t": "Book time with me at calendly.com/dwightstuckey, or email dwight@stuckey.com."
   },
   {
-   "s": 296.66,
-   "e": 299.2,
+   "s": 299.31,
+   "e": 301.85,
    "t": "Built for creators. Placed by you."
   }
  ]
