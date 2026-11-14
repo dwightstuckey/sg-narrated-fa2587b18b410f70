@@ -1,0 +1,688 @@
+{
+ "total": 300.0,
+ "tempo": 1.1,
+ "segGap": 1.184,
+ "partGap": 0.28,
+ "words": 613,
+ "slides": [
+  {
+   "id": "cover",
+   "slide": 1,
+   "start": 0.35,
+   "speechEnd": 13.544,
+   "actions": [],
+   "end": 14.728,
+   "title": "Cover",
+   "show": 0.0
+  },
+  {
+   "id": "hosts",
+   "slide": 2,
+   "start": 14.728,
+   "speechEnd": 25.336,
+   "actions": [],
+   "end": 26.52,
+   "title": "Your hosts",
+   "show": 14.178
+  },
+  {
+   "id": "market",
+   "slide": 3,
+   "start": 26.52,
+   "speechEnd": 44.224,
+   "actions": [],
+   "end": 45.408,
+   "title": "Agenda",
+   "show": 25.97
+  },
+  {
+   "id": "stuckey",
+   "slide": 4,
+   "start": 45.408,
+   "speechEnd": 55.398,
+   "actions": [],
+   "end": 56.583,
+   "title": "Quote. Place. Grow.",
+   "show": 44.858
+  },
+  {
+   "id": "opportunity",
+   "slide": 5,
+   "start": 56.583,
+   "speechEnd": 69.483,
+   "actions": [],
+   "end": 70.668,
+   "title": "The Opportunity Expands Your Book",
+   "show": 56.033
+  },
+  {
+   "id": "boundaries",
+   "slide": 6,
+   "start": 70.668,
+   "speechEnd": 81.109,
+   "actions": [],
+   "end": 82.294,
+   "title": "What we don't write",
+   "show": 70.118
+  },
+  {
+   "id": "layers",
+   "slide": 7,
+   "start": 82.294,
+   "speechEnd": 100.008,
+   "actions": [],
+   "end": 101.192,
+   "title": "Layered coverage",
+   "show": 81.744
+  },
+  {
+   "id": "categories",
+   "slide": 8,
+   "start": 101.192,
+   "speechEnd": 119.546,
+   "actions": [
+    {
+     "t": 104.436,
+     "a": "tip",
+     "k": 0
+    },
+    {
+     "t": 107.112,
+     "a": "tip",
+     "k": 1
+    },
+    {
+     "t": 109.896,
+     "a": "tip",
+     "k": 4
+    },
+    {
+     "t": 113.522,
+     "a": "tip",
+     "k": null
+    }
+   ],
+   "end": 120.73,
+   "title": "8 categories",
+   "show": 100.642
+  },
+  {
+   "id": "trimrisk",
+   "slide": 9,
+   "start": 120.73,
+   "speechEnd": 137.554,
+   "actions": [],
+   "end": 138.738,
+   "title": "Embedded: Prevention as a Service",
+   "show": 120.18
+  },
+  {
+   "id": "howitworks",
+   "slide": 10,
+   "start": 138.738,
+   "speechEnd": 146.64,
+   "actions": [],
+   "end": 147.825,
+   "title": "How it works in CoverCore",
+   "show": 138.188
+  },
+  {
+   "id": "quotepath",
+   "slide": 11,
+   "start": 147.825,
+   "speechEnd": 157.698,
+   "actions": [],
+   "end": 158.882,
+   "title": "The quote path",
+   "show": 147.275
+  },
+  {
+   "id": "stp",
+   "slide": 12,
+   "start": 158.882,
+   "speechEnd": 171.087,
+   "actions": [],
+   "end": 172.271,
+   "title": "Straight-through processing",
+   "show": 158.332
+  },
+  {
+   "id": "pricing",
+   "slide": 13,
+   "start": 172.271,
+   "speechEnd": 182.048,
+   "actions": [],
+   "end": 183.232,
+   "title": "Straightforward pricing",
+   "show": 171.721
+  },
+  {
+   "id": "leads",
+   "slide": 14,
+   "start": 183.232,
+   "speechEnd": 197.218,
+   "actions": [],
+   "end": 198.403,
+   "title": "Leads you didn't have to find",
+   "show": 182.682
+  },
+  {
+   "id": "talktrack",
+   "slide": 15,
+   "start": 198.403,
+   "speechEnd": 211.355,
+   "actions": [],
+   "end": 212.539,
+   "title": "Start the conversation",
+   "show": 197.853
+  },
+  {
+   "id": "share",
+   "slide": 16,
+   "start": 212.539,
+   "speechEnd": 218.636,
+   "actions": [],
+   "end": 219.821,
+   "title": "Share the application",
+   "show": 211.989
+  },
+  {
+   "id": "setup",
+   "slide": 17,
+   "start": 219.821,
+   "speechEnd": 233.523,
+   "actions": [],
+   "end": 234.707,
+   "title": "Get set up",
+   "show": 219.271
+  },
+  {
+   "id": "qa",
+   "slide": 18,
+   "start": 234.707,
+   "speechEnd": 241.399,
+   "actions": [],
+   "end": 242.583,
+   "title": "Q&A",
+   "show": 234.157
+  },
+  {
+   "id": "countdown",
+   "slide": 19,
+   "start": 242.583,
+   "speechEnd": 284.093,
+   "actions": [
+    {
+     "t": 251.287,
+     "a": "step",
+     "k": 1
+    },
+    {
+     "t": 255.641,
+     "a": "step",
+     "k": 2
+    },
+    {
+     "t": 258.745,
+     "a": "step",
+     "k": 3
+    },
+    {
+     "t": 261.826,
+     "a": "step",
+     "k": 4
+    },
+    {
+     "t": 265.821,
+     "a": "step",
+     "k": 5
+    },
+    {
+     "t": 268.566,
+     "a": "step",
+     "k": 6
+    },
+    {
+     "t": 271.253,
+     "a": "step",
+     "k": 7
+    },
+    {
+     "t": 273.495,
+     "a": "step",
+     "k": 8
+    },
+    {
+     "t": 275.843,
+     "a": "step",
+     "k": 9
+    }
+   ],
+   "end": 285.277,
+   "title": "Top 10 countdown",
+   "show": 242.033
+  },
+  {
+   "id": "close",
+   "slide": 20,
+   "start": 285.277,
+   "speechEnd": 298.799,
+   "actions": [],
+   "end": 300.0,
+   "title": "Thank you",
+   "show": 284.727
+  }
+ ],
+ "captions": [
+  {
+   "s": 0.35,
+   "e": 1.72,
+   "t": "Thirty-five years."
+  },
+  {
+   "s": 1.72,
+   "e": 4.32,
+   "t": "That's how long I've been in this business."
+  },
+  {
+   "s": 4.32,
+   "e": 7.76,
+   "t": "And I can honestly tell you, we have something special here."
+  },
+  {
+   "s": 7.76,
+   "e": 11.09,
+   "t": "I'm Dwight Stuckey, and this is the StudioGuard Premiere."
+  },
+  {
+   "s": 11.09,
+   "e": 13.54,
+   "t": "Insurance built for the creator economy."
+  },
+  {
+   "s": 14.73,
+   "e": 25.34,
+   "t": "Thursday, November 19th, at 1 PM Central, you'll meet my team: Libby on coverage and the quote path, Kami on leads and sharing, and Brandy on getting you set up."
+  },
+  {
+   "s": 26.52,
+   "e": 27.84,
+   "t": "So why now?"
+  },
+  {
+   "s": 27.84,
+   "e": 33.43,
+   "t": "Goldman Sachs and IAB put the creator economy at $250 billion in 2023."
+  },
+  {
+   "s": 33.43,
+   "e": 37.82,
+   "t": "By 2027? $480 billion. More than 50 million creators."
+  },
+  {
+   "s": 37.82,
+   "e": 40.08,
+   "t": "That's not a hobby market."
+  },
+  {
+   "s": 40.08,
+   "e": 44.22,
+   "t": "Those are businesses, and they need insurance that fits."
+  },
+  {
+   "s": 45.41,
+   "e": 49.42,
+   "t": "Quote. Place. Grow. That's what we do for agents."
+  },
+  {
+   "s": 49.42,
+   "e": 55.4,
+   "t": "Family owned for 35 years, with more than 1,200 partner agencies in 48 states."
+  },
+  {
+   "s": 56.58,
+   "e": 60.47,
+   "t": "Here's the big idea. StudioGuard expands your book."
+  },
+  {
+   "s": 60.47,
+   "e": 63.53,
+   "t": "Admitted markets handle the easy stuff."
+  },
+  {
+   "s": 63.53,
+   "e": 67.54,
+   "t": "Our surplus lines program covers everything around it."
+  },
+  {
+   "s": 67.54,
+   "e": 69.48,
+   "t": "874 eligible classes."
+  },
+  {
+   "s": 70.67,
+   "e": 75.19,
+   "t": "We're clear about what we don't write, so you never waste a submission."
+  },
+  {
+   "s": 75.19,
+   "e": 77.37,
+   "t": "A prospect fits one of these?"
+  },
+  {
+   "s": 77.37,
+   "e": 81.11,
+   "t": "Send it to proquotes@stuckey.com, and we'll look."
+  },
+  {
+   "s": 82.29,
+   "e": 84.26,
+   "t": "This is the heart of it."
+  },
+  {
+   "s": 84.26,
+   "e": 87.83,
+   "t": "Your client's work has layers. So does StudioGuard."
+  },
+  {
+   "s": 87.83,
+   "e": 91.64,
+   "t": "Picture a videographer. They start shooting on location?"
+  },
+  {
+   "s": 91.64,
+   "e": 94.41,
+   "t": "Add GL. They rent gear? Add property."
+  },
+  {
+   "s": 94.41,
+   "e": 97.12,
+   "t": "They store client footage? Add cyber."
+  },
+  {
+   "s": 97.12,
+   "e": 100.01,
+   "t": "Every step in the business adds a layer."
+  },
+  {
+   "s": 101.19,
+   "e": 104.52,
+   "t": "And who's it for? Look at your own book."
+  },
+  {
+   "s": 104.52,
+   "e": 107.19,
+   "t": "The photographer shooting local events."
+  },
+  {
+   "s": 107.19,
+   "e": 109.98,
+   "t": "The consultant selling an online course."
+  },
+  {
+   "s": 109.98,
+   "e": 113.6,
+   "t": "The developer building apps for small businesses."
+  },
+  {
+   "s": 113.6,
+   "e": 115.65,
+   "t": "They're already your clients."
+  },
+  {
+   "s": 115.65,
+   "e": 119.55,
+   "t": "Eight categories, and Creators lead at about $28 billion."
+  },
+  {
+   "s": 120.73,
+   "e": 124.57,
+   "t": "Insurance reacts. Prevention gets ahead of the claim."
+  },
+  {
+   "s": 124.57,
+   "e": 128.17,
+   "t": "So we built TRiMRisk right into the application."
+  },
+  {
+   "s": 128.17,
+   "e": 132.49,
+   "t": "Prevention as a Service. Lower loss ratios, higher retention."
+  },
+  {
+   "s": 132.49,
+   "e": 134.38,
+   "t": "And yes, that's Tiny."
+  },
+  {
+   "s": 134.38,
+   "e": 137.55,
+   "t": "Just remember, TRiMRisk is not insurance."
+  },
+  {
+   "s": 138.74,
+   "e": 141.37,
+   "t": "And it all works from your phone."
+  },
+  {
+   "s": 141.37,
+   "e": 146.64,
+   "t": "Tap Access CoverCore, and StudioGuard sits right on your Start a Quote row."
+  },
+  {
+   "s": 147.82,
+   "e": 150.03,
+   "t": "Here's the number to remember."
+  },
+  {
+   "s": 150.03,
+   "e": 154.17,
+   "t": "We estimate about 85% of applications go straight through."
+  },
+  {
+   "s": 154.17,
+   "e": 157.7,
+   "t": "Five steps, from the first screen to an issued policy."
+  },
+  {
+   "s": 158.88,
+   "e": 159.99,
+   "t": "How fast?"
+  },
+  {
+   "s": 159.99,
+   "e": 164.11,
+   "t": "About three minutes, quote to policy, from eight data points."
+  },
+  {
+   "s": 164.11,
+   "e": 167.31,
+   "t": "AI and third-party data build the head start."
+  },
+  {
+   "s": 167.31,
+   "e": 171.09,
+   "t": "Your client just confirms it. Less typing. More advice."
+  },
+  {
+   "s": 172.27,
+   "e": 175.25,
+   "t": "And the price is easy to talk about."
+  },
+  {
+   "s": 175.25,
+   "e": 179.26,
+   "t": "Starting at $350 a year, plus fees and taxes."
+  },
+  {
+   "s": 179.26,
+   "e": 182.05,
+   "t": "Premium financing is coming soon."
+  },
+  {
+   "s": 183.23,
+   "e": 186.51,
+   "t": "Now, growth. Leads you didn't have to find."
+  },
+  {
+   "s": 186.51,
+   "e": 192.7,
+   "t": "Our affiliate program finds creators in your market and drops them into your Pipeline tab."
+  },
+  {
+   "s": 192.7,
+   "e": 195.61,
+   "t": "The catch? Leads go to full profiles."
+  },
+  {
+   "s": 195.61,
+   "e": 197.22,
+   "t": "So finish yours."
+  },
+  {
+   "s": 198.4,
+   "e": 202.16,
+   "t": "Need an opener? Try this. Your work has changed."
+  },
+  {
+   "s": 202.16,
+   "e": 205.4,
+   "t": "Has your insurance kept up? Then listen."
+  },
+  {
+   "s": 205.4,
+   "e": 211.36,
+   "t": "And this Premiere goes on YouTube, so your clients hear the story before you call."
+  },
+  {
+   "s": 212.54,
+   "e": 215.01,
+   "t": "This one's huge. Share the application."
+  },
+  {
+   "s": 215.01,
+   "e": 218.64,
+   "t": "Your client does the typing, and you stay the agent of record."
+  },
+  {
+   "s": 219.82,
+   "e": 222.02,
+   "t": "Getting started is simple."
+  },
+  {
+   "s": 222.02,
+   "e": 226.06,
+   "t": "Log in through Access CoverCore, or click Get Appointed."
+  },
+  {
+   "s": 226.06,
+   "e": 227.41,
+   "t": "No minimums."
+  },
+  {
+   "s": 227.41,
+   "e": 231.93,
+   "t": "By our estimates, there are 27 million paid creators in the U.S."
+  },
+  {
+   "s": 231.93,
+   "e": 233.52,
+   "t": "Find your state."
+  },
+  {
+   "s": 234.71,
+   "e": 235.89,
+   "t": "Questions?"
+  },
+  {
+   "s": 235.89,
+   "e": 241.4,
+   "t": "Drop them in the Teams Q&A on the 19th, or email proquotes@stuckey.com."
+  },
+  {
+   "s": 242.58,
+   "e": 244.74,
+   "t": "Remember those 35 years?"
+  },
+  {
+   "s": 244.74,
+   "e": 247.34,
+   "t": "Here's why this one is special."
+  },
+  {
+   "s": 247.34,
+   "e": 251.37,
+   "t": "Ten things, never before together in one program."
+  },
+  {
+   "s": 251.37,
+   "e": 255.72,
+   "t": "Ten. A market headed to $480 billion."
+  },
+  {
+   "s": 255.72,
+   "e": 258.83,
+   "t": "Nine. Built only for creators."
+  },
+  {
+   "s": 258.83,
+   "e": 261.91,
+   "t": "Eight. CoverCore APIs."
+  },
+  {
+   "s": 261.91,
+   "e": 265.9,
+   "t": "Seven. An aggregator plus an exclusive program."
+  },
+  {
+   "s": 265.9,
+   "e": 268.65,
+   "t": "Six. Embedded prevention."
+  },
+  {
+   "s": 268.65,
+   "e": 271.33,
+   "t": "Five. Exclusive coverage."
+  },
+  {
+   "s": 271.33,
+   "e": 273.57,
+   "t": "Four. A fast start."
+  },
+  {
+   "s": 273.57,
+   "e": 275.92,
+   "t": "Three. Share links."
+  },
+  {
+   "s": 275.92,
+   "e": 278.38,
+   "t": "Two. Leads, delivered."
+  },
+  {
+   "s": 278.38,
+   "e": 280.87,
+   "t": "And number one? My favorite."
+  },
+  {
+   "s": 280.87,
+   "e": 284.09,
+   "t": "Join us live, and I'll show you myself."
+  },
+  {
+   "s": 285.28,
+   "e": 290.08,
+   "t": "So this week, complete your profile and quote your first creator client."
+  },
+  {
+   "s": 290.08,
+   "e": 296.22,
+   "t": "Book time with me at calendly.com/dwightstuckey, or email dwight@stuckey.com."
+  },
+  {
+   "s": 296.22,
+   "e": 298.8,
+   "t": "Built for creators. Placed by you."
+  }
+ ]
+}

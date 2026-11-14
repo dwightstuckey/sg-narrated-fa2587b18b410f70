@@ -1,0 +1,373 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>The StudioGuard Premiere: narrated walk-through | Stuckey &amp; Company</title>
+<meta name="description" content="A 5-minute narrated walk-through of the StudioGuard Premiere for CoverCore Member Agents. Built for creators. Placed by you.">
+<meta name="theme-color" content="#0b1424">
+<link rel="icon" href="img/stuckey-mark-200.webp">
+<style>@font-face{font-family:Inter;src:url(fonts/inter-var.woff2) format('woff2');font-weight:100 900;font-display:swap}
+@font-face{font-family:'Playfair Display';font-style:italic;src:url(fonts/playfair-italic.woff2) format('woff2');font-weight:400 900;font-display:swap}
+:root{--navy:#0A2A43;--gold:#E3AB4F;--steel:#4080A7;--deep:#0D3354;--slate:#6B7280;--paper:#F7F6F2;--sky:#7AB8DD;--hover:#5094B8}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:#061b2c;color:#fff;font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow:hidden}
+#player{position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#061b2c}
+#screen{position:relative;overflow:hidden;background:var(--navy);box-shadow:0 20px 60px rgba(0,0,0,.45)}
+#deck{position:absolute;left:0;top:0;width:1280px;height:720px;transform-origin:0 0}
+.slide{position:absolute;inset:0;padding:64px 80px 78px;opacity:0;visibility:hidden;transition:opacity .6s ease,visibility .6s;display:flex;flex-direction:column}
+.slide.on{opacity:1;visibility:visible}
+.slide.dark{background:radial-gradient(800px 500px at 88% 8%,rgba(64,128,167,.38),transparent 60%),radial-gradient(700px 420px at 6% 100%,rgba(227,171,79,.16),transparent 60%),linear-gradient(135deg,#0A2A43 0%,#0D3354 60%,#0A2A43 100%);color:#fff}
+.slide.light{background:var(--paper);color:var(--navy)}
+.top{position:absolute;left:80px;right:80px;top:26px;display:flex;justify-content:space-between;align-items:center}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:17px;letter-spacing:-.2px}
+.logo img{width:30px;height:30px}
+.dark .logo{color:#fff}.light .logo{color:var(--navy)}
+.ev{font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase}
+.dark .ev{color:var(--sky)}.light .ev{color:var(--slate)}
+.foot{position:absolute;left:80px;right:80px;bottom:22px;display:flex;justify-content:space-between;gap:30px;font-size:11.5px;line-height:1.4}
+.dark .foot{color:rgba(255,255,255,.55)}.light .foot{color:var(--slate)}
+.foot .src{text-align:right;max-width:560px}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:3px;text-transform:uppercase;margin:34px 0 10px}
+.dark .eyebrow{color:var(--gold)}.light .eyebrow{color:var(--steel)}
+h1{font-weight:900;font-size:84px;line-height:.95;letter-spacing:-3px}
+h2{font-weight:900;font-size:46px;line-height:1.08;letter-spacing:-1.8px;margin-bottom:26px}
+h3{font-weight:700;font-size:23px;line-height:1.25;letter-spacing:-.3px}
+.gold{color:var(--gold)}
+.hl{color:var(--steel)}
+.lead{font-size:20px;line-height:1.55;margin-top:22px;max-width:640px}
+.dark .lead{color:rgba(255,255,255,.78)}
+.card{border-radius:18px;padding:24px 26px;background:#fff;border:1px solid rgba(10,42,67,.08);box-shadow:0 6px 24px rgba(10,42,67,.06)}
+.card p{font-size:16.5px;line-height:1.55;color:var(--slate);margin-top:8px}
+.card.dk{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);box-shadow:none}
+.card.dk p{color:rgba(255,255,255,.72)}
+.lbl{font-size:11.5px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--steel);margin-bottom:12px}
+/* reveal */
+.rv{opacity:0;transform:translateY(14px)}
+.on .rv{animation:rv .7s cubic-bezier(.2,.7,.2,1) forwards}
+.on .d1{animation-delay:.25s}.on .d2{animation-delay:.6s}.on .d3{animation-delay:1s}.on .d4{animation-delay:1.4s}.on .d5{animation-delay:1.9s}.on .d6{animation-delay:2.4s}
+@keyframes rv{to{opacity:1;transform:none}}
+.paused .on .rv{animation-play-state:paused}
+.instant .rv{animation:none!important;opacity:1;transform:none}
+/* title */
+.s-title{flex-direction:row;align-items:center;justify-content:space-between}
+.hero-l{max-width:720px;margin-top:20px}
+.hero-l .eyebrow{margin-top:0}
+.meta{margin-top:26px;font-size:15px;font-weight:600;color:var(--sky);letter-spacing:.3px}
+.people{display:flex;gap:16px;margin-top:16px}
+.pp{border:1px solid rgba(255,255,255,.16);border-radius:14px;padding:12px 16px;background:rgba(255,255,255,.05)}
+.pp b{display:block;font-size:16px}.pp span{font-size:13.5px;color:rgba(255,255,255,.65)}
+.hero-r{display:flex;flex-direction:column;align-items:center;gap:16px;margin-right:20px}
+.ring{width:260px;height:260px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle,rgba(227,171,79,.16),transparent 70%);border:1px solid rgba(227,171,79,.4)}
+.ring img{width:180px;height:180px}
+.ringcap{font-size:12px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold)}
+/* why */
+.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.m .big{font-size:60px;font-weight:900;letter-spacing:-2.5px;color:var(--navy);line-height:1}
+.m b{display:block;margin-top:10px;font-size:18px;color:var(--navy)}
+.m{border-top:4px solid var(--steel)}
+.pq{margin-top:28px;font-family:'Playfair Display',serif;font-style:italic;font-size:30px;line-height:1.3;color:var(--navy);border-left:4px solid var(--steel);padding-left:22px}
+.pq cite,.two cite{display:block;font-family:Inter;font-style:normal;font-size:14px;font-weight:600;color:var(--slate);margin-top:8px}
+/* classes */
+.cols3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.cols2{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.num{font-size:14px;font-weight:800;color:var(--gold);letter-spacing:2px;margin-bottom:12px}
+.tag{display:inline-block;margin-top:16px;font-size:13px;font-weight:700;padding:6px 12px;border-radius:999px;border:1px solid rgba(227,171,79,.55);color:var(--gold)}
+.banner{margin-top:24px;padding:18px 24px;border-radius:14px;font-size:18px;line-height:1.45;background:rgba(227,171,79,.12);border:1px solid rgba(227,171,79,.35);color:#fff}
+.banner b{color:var(--gold)}
+.banner.lt{background:#fff;border:1px solid rgba(64,128,167,.35);color:var(--navy)}
+.banner.lt b{color:var(--steel)}
+/* hab/lro */
+.split{display:grid;grid-template-columns:1fr 1.15fr;gap:22px;align-items:start}
+.split.s2{margin-top:20px;grid-template-columns:1fr 1fr;flex:none}
+ul{list-style:none}
+.ticks li,.dots li{position:relative;padding-left:32px;font-size:18px;line-height:1.45;margin:11px 0;color:var(--navy)}
+.ticks li:before{content:"✓";position:absolute;left:0;top:0;width:22px;height:22px;border-radius:50%;background:var(--steel);color:#fff;font-size:13px;font-weight:800;display:grid;place-items:center;margin-top:2px}
+.dots li:before{content:"";position:absolute;left:6px;top:10px;width:9px;height:9px;border-radius:50%;background:var(--gold)}
+.dots li{font-size:17px}
+.stat{display:flex;align-items:center;gap:14px;margin-top:18px;padding-top:16px;border-top:1px solid rgba(10,42,67,.1)}
+.big2{font-size:54px;font-weight:900;letter-spacing:-2px;color:var(--steel);line-height:1}
+.stat span:last-child{font-size:15.5px;color:var(--slate);max-width:240px;line-height:1.4}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips i{font-style:normal;font-size:14.5px;font-weight:600;padding:7px 13px;border-radius:999px;background:rgba(64,128,167,.1);color:var(--deep)}
+.callout{margin-top:18px;padding:15px 18px;border-radius:12px;background:var(--navy);color:#fff;font-size:16.5px;line-height:1.5}
+.callout b{color:var(--gold)}
+.aside{font-size:15px!important;margin-top:14px!important;font-style:italic}
+/* pricing */
+.pricing{display:grid;grid-template-columns:1.6fr 1fr;gap:24px;align-items:stretch}
+.steps{display:flex;flex-direction:column;gap:14px}
+.step{display:flex;gap:18px;align-items:flex-start;padding:18px 22px}
+.step .n{flex:none;width:38px;height:38px;border-radius:50%;background:var(--gold);color:var(--navy);font-weight:900;display:grid;place-items:center;font-size:18px}
+.step h3{font-size:20px}.step p{font-size:15.5px;margin-top:4px}
+.two{border-radius:18px;padding:30px;background:rgba(227,171,79,.12);border:1px solid rgba(227,171,79,.4);display:flex;flex-direction:column;justify-content:center}
+.two .x{font-size:120px;font-weight:900;color:var(--gold);letter-spacing:-5px;line-height:.9}
+.two p{font-size:24px;line-height:1.35;margin-top:12px}
+.two p b{color:var(--gold)}
+.two cite{color:rgba(255,255,255,.6)}
+/* wc */
+.warn{border-left:5px solid var(--gold)}
+.warn h3{font-size:21px}
+.cols2 .card h3{font-size:24px;margin-top:2px}
+/* qa */
+.qa .card{position:relative}
+.qa h3{margin:12px 0 4px}
+.qa p{font-size:15.5px}
+.qa p b{color:var(--navy)}
+.st{display:inline-block;font-size:11.5px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;padding:5px 10px;border-radius:999px}
+.st.ok{background:rgba(64,128,167,.14);color:var(--deep)}
+.st.mix{background:rgba(227,171,79,.22);color:#7a5414}
+.st.open{background:rgba(107,114,128,.16);color:#40454f}
+/* limits */
+.lim .card h3{color:#fff;margin-bottom:12px}
+.lv{display:flex;align-items:baseline;gap:12px;padding:12px 0;border-top:1px solid rgba(255,255,255,.12)}
+.lv b{font-size:50px;font-weight:900;color:var(--gold);letter-spacing:-2px;line-height:1}
+.lv span{font-size:16px;color:rgba(255,255,255,.75)}
+/* actions */
+.acts{list-style:none;display:flex;flex-direction:column;gap:12px}
+.acts li{display:flex;gap:18px;align-items:center;background:#fff;border-radius:14px;padding:14px 20px;border:1px solid rgba(10,42,67,.08)}
+.acts span{flex:none;width:36px;height:36px;border-radius:50%;background:var(--navy);color:var(--gold);font-weight:900;display:grid;place-items:center}
+.acts div{font-size:18px;line-height:1.4;color:var(--navy)}
+.acts b{color:var(--steel)}
+/* upcoming */
+.tl{display:flex;flex-direction:column;gap:12px;border-left:3px solid var(--steel);margin-left:10px;padding-left:28px}
+.ti{position:relative;display:flex;gap:26px;align-items:center;background:#fff;border-radius:14px;padding:16px 22px;border:1px solid rgba(10,42,67,.08)}
+.ti:before{content:"";position:absolute;left:-38px;top:50%;width:15px;height:15px;margin-top:-8px;border-radius:50%;background:var(--steel);border:3px solid var(--paper)}
+.when{flex:none;width:90px;font-weight:900;font-size:20px;color:var(--steel)}
+.what b{display:block;font-size:20px;color:var(--navy)}
+.what span{font-size:14.5px;color:var(--slate)}
+.note{margin-top:16px;font-size:16px;color:var(--slate)}
+/* close */
+.s-close{align-items:center;justify-content:center;text-align:center}
+.closew{display:flex;flex-direction:column;align-items:center}
+.closew .mark{width:110px;height:110px}
+.wm{font-weight:700;font-size:22px;margin-top:14px;letter-spacing:-.3px}
+.closew h1{margin-top:22px;font-size:72px}
+.trio{display:flex;gap:12px;margin-top:28px}
+.trio span{font-size:15px;font-weight:600;padding:9px 16px;border-radius:999px;border:1px solid rgba(255,255,255,.3)}
+.closew .lead{margin:24px auto 0;max-width:760px;font-size:18px}
+/* captions */
+#cap{position:absolute;left:50%;bottom:3.2%;transform:translateX(-50%);width:86%;text-align:center;pointer-events:none;z-index:5}
+#cap span{display:inline;background:rgba(6,20,34,.82);color:#fff;font-weight:500;line-height:1.5;padding:.18em .5em;border-radius:6px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+#cap.off,#cap:empty{display:none}
+/* big play */
+#big{position:absolute;inset:0;z-index:8;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;background:rgba(6,27,44,.35);cursor:pointer;border:0;color:#fff;font:inherit}
+#big .pb{width:112px;height:112px;border-radius:50%;background:var(--steel);display:grid;place-items:center;box-shadow:0 10px 40px rgba(0,0,0,.4),0 0 0 10px rgba(255,255,255,.12);transition:transform .2s,background .2s}
+#big:hover .pb{transform:scale(1.06);background:var(--hover)}
+#big svg{width:44px;height:44px;margin-left:8px;fill:#fff}
+#big .bl{font-weight:700;font-size:15px;letter-spacing:.3px;background:rgba(10,42,67,.8);padding:8px 16px;border-radius:999px}
+#big.hide{display:none}
+/* control bar */
+#bar{width:100%;display:flex;flex-direction:column;gap:6px;padding:8px 14px 10px;background:#061b2c;color:#fff;user-select:none;-webkit-user-select:none}
+#scrub{position:relative;height:22px;cursor:pointer;touch-action:none}
+#scrub .rail{position:absolute;left:0;right:0;top:9px;height:5px;border-radius:3px;background:rgba(255,255,255,.2)}
+#scrub .fill{position:absolute;left:0;top:9px;height:5px;border-radius:3px;background:var(--gold);width:0}
+#scrub .knob{position:absolute;top:4px;width:15px;height:15px;margin-left:-7.5px;border-radius:50%;background:#fff;left:0;box-shadow:0 1px 4px rgba(0,0,0,.4)}
+#scrub .tick{position:absolute;top:7px;width:2px;height:9px;background:rgba(6,27,44,.9)}
+#tipx{position:absolute;bottom:24px;transform:translateX(-50%);white-space:nowrap;background:#0D3354;border:1px solid rgba(255,255,255,.15);font-size:12px;padding:4px 8px;border-radius:6px;display:none;pointer-events:none}
+.row{display:flex;align-items:center;gap:6px}
+.row button{background:none;border:0;color:#fff;font:600 13px Inter,sans-serif;height:36px;min-width:36px;padding:0 8px;border-radius:8px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:6px}
+.row button:hover,.row button:focus-visible{background:rgba(255,255,255,.1);outline:none}
+.row svg{width:20px;height:20px;fill:#fff}
+#time{font:500 13px Inter,sans-serif;font-variant-numeric:tabular-nums;color:rgba(255,255,255,.85);margin-left:4px;white-space:nowrap}
+#stitle{flex:1;min-width:0;font-size:13px;color:rgba(255,255,255,.6);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding:0 8px}
+#bcc.act{color:var(--gold);box-shadow:inset 0 -2px 0 var(--gold)}
+#credit{font-size:11px;color:rgba(255,255,255,.45);text-align:center;padding:0 10px 4px}
+#player.fsmode #bar{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(0,0,0,.75));transition:opacity .3s}
+#player.fsmode.idle #bar{opacity:0}
+#player.fsmode.idle{cursor:none}
+#player.pseudo{position:fixed;inset:0;z-index:99}
+@media (max-width:640px){#stitle{display:none}.row button{min-width:40px;height:40px}#credit{font-size:10px}}
+#wrap{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;width:100%;min-height:0}
+#player.portrait #cap{position:relative;left:auto;bottom:auto;transform:none;text-align:center}
+#player.portrait #cap span{background:none;padding:0;color:#fff}
+@media (max-width:700px){#big .pb{width:64px;height:64px;box-shadow:0 6px 20px rgba(0,0,0,.4),0 0 0 6px rgba(255,255,255,.12)}#big svg{width:28px;height:28px;margin-left:5px}#big .bl{font-size:12px;padding:5px 11px}#big{gap:10px}}
+
+.gbtn,.obtn{display:inline-flex;align-items:center;justify-content:center;gap:6px;font:700 14px Inter,sans-serif;text-decoration:none;border-radius:999px;padding:8px 16px;white-space:nowrap;cursor:pointer;transition:transform .15s,background .15s}
+.gbtn{background:var(--gold);color:var(--navy);border:1px solid var(--gold)}
+.gbtn:hover,.gbtn:focus-visible{background:#ecbd6c;transform:translateY(-2px);outline:none}
+.obtn{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.45)}
+.obtn:hover,.obtn:focus-visible{background:rgba(255,255,255,.08);transform:translateY(-2px);outline:none}
+.big{font-size:19px;padding:12px 26px}
+.s-close .cta{display:flex;gap:14px;margin-top:22px}
+.s-close .shared{margin-top:14px;font-size:13px;color:rgba(255,255,255,.5)}
+.s-close .closew h1{margin-top:14px}.s-close .closew .lead{margin-top:16px}.s-close .trio{margin-top:18px}.s-close .closew .mark{width:96px;height:96px}
+#ctrow{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;padding:2px 0}
+#ctrow .gbtn{font-size:13px;padding:6px 14px}
+#ctrow .shared{font-size:11.5px;color:rgba(255,255,255,.5)}
+#drawer{position:fixed;top:0;right:0;bottom:0;width:380px;max-width:100%;z-index:120;background:#0A2A43;border-left:1px solid rgba(255,255,255,.12);box-shadow:-20px 0 50px rgba(0,0,0,.4);padding:22px 24px 28px;overflow-y:auto;color:#fff;-webkit-overflow-scrolling:touch}
+#drawer[hidden]{display:none}
+.dhead{display:flex;justify-content:space-between;align-items:flex-start}
+#drawer .eyebrow{margin:0 0 4px;color:var(--gold);font-size:11px}
+#drawer h2{font-size:28px;margin:0;letter-spacing:-1px}
+#dclose{background:none;border:1px solid rgba(255,255,255,.3);color:#fff;width:36px;height:36px;border-radius:50%;font-size:22px;line-height:1;cursor:pointer}
+.dsub{font-size:14px;line-height:1.5;color:rgba(255,255,255,.72);margin:10px 0 16px}
+.dlinks{display:flex;flex-direction:column;gap:10px}
+.dlinks a{width:100%;font-size:15px;padding:11px 16px}
+#cform{margin-top:20px;border-top:1px solid rgba(255,255,255,.14);padding-top:16px;display:flex;flex-direction:column;gap:10px}
+.ftitle{font-weight:800;font-size:17px}
+#cform label{display:flex;flex-direction:column;gap:4px;font-size:12.5px;font-weight:600;color:rgba(255,255,255,.8)}
+#cform input,#cform textarea{font:400 16px Inter,sans-serif;color:var(--navy);background:var(--paper);border:1px solid transparent;border-radius:10px;padding:9px 11px;width:100%}
+#cform input:focus,#cform textarea:focus{outline:2px solid var(--steel);outline-offset:1px}
+#cform textarea{resize:vertical;min-height:72px}
+.two-up{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.hint{font-size:12px;color:rgba(255,255,255,.55);margin-top:-4px}
+.hp{position:absolute!important;left:-9999px!important;width:1px;height:1px;opacity:0}
+#ferr{font-size:13px;color:#ffd08a;min-height:0}
+#ferr a{color:var(--gold)}
+#fsend{align-self:flex-start;font-size:15px;padding:10px 26px}
+#fsend[disabled]{opacity:.6;cursor:wait}
+#fthanks{margin-top:22px;padding:18px;border-radius:14px;background:rgba(227,171,79,.12);border:1px solid rgba(227,171,79,.4)}
+#fthanks h3{color:var(--gold)}#fthanks p{font-size:14px;margin-top:6px;color:rgba(255,255,255,.8)}
+@media (min-width:900px){#player.dopen{right:380px}}
+@media (max-width:640px){#ctrow{gap:4px 10px}#ctrow .shared{font-size:10.5px}
+ #drawer{top:auto;left:0;width:100%;max-height:78vh;border-left:0;border-top:1px solid rgba(255,255,255,.15);border-radius:18px 18px 0 0;padding:16px 18px 24px}
+ #player.dopen #wrap{justify-content:flex-start;padding-top:6px}}
+
+#screen{background:#0b1424}
+#deckframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block;pointer-events:none;background:#0b1424}
+#shield{position:absolute;inset:0;z-index:3;cursor:pointer}
+#big{z-index:6}
+#player.loading #big .pb{opacity:.45}
+#cap{position:relative!important;left:auto!important;bottom:auto!important;transform:none!important;text-align:center;line-height:1.35;padding-top:10px;margin:0 auto}
+#cap span{background:none!important;padding:0!important;color:#fff}
+#cap:empty{display:block}
+#cap.off{visibility:hidden;display:block}
+#wrap{justify-content:center}
+#drawer .dsub a{color:#E3AB4F;text-decoration:underline}
+</style></head><body>
+<div id="player" class="loading paused">
+ <div id="wrap">
+  <div id="screen">
+   <iframe id="deckframe" src="deck.html#1" title="StudioGuard Premiere deck" tabindex="-1" aria-hidden="true"></iframe>
+   <div id="shield" aria-hidden="true"></div>
+   <button id="big" aria-label="Play presentation"><span class="pb"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span><span class="bl">Loading&hellip;</span></button>
+  </div>
+  <div id="cap" aria-live="off"></div>
+ </div>
+ <div id="bar">
+  <div id="scrub" role="slider" aria-label="Seek" tabindex="0"><div class="rail"></div><div class="fill" id="fill"></div><div class="knob" id="knob"></div><div id="tipx"></div></div>
+  <div class="row">
+   <button id="bprev" aria-label="Previous slide"><svg viewBox="0 0 24 24"><path d="M6 6h2v12H6zM9.5 12 18 18V6z"/></svg></button>
+   <button id="bplay" aria-label="Play"></button>
+   <button id="bnext" aria-label="Next slide"><svg viewBox="0 0 24 24"><path d="M16 6h2v12h-2zM6 18l8.5-6L6 6z"/></svg></button>
+   <span id="time">0:00 / 5:00</span>
+   <span id="stitle"></span>
+   <button id="bcc" class="act" aria-pressed="true" aria-label="Captions">CC</button>
+   <button id="bfs" aria-label="Fullscreen"><svg viewBox="0 0 24 24"><path d="M5 5h5v2H7v3H5zm9 0h5v5h-2V7h-3zM5 14h2v3h3v2H5zm12 0h2v5h-5v-2h3z"/></svg></button>
+  </div>
+  <div id="ctrow"><button id="bcontact" class="gbtn" type="button" aria-haspopup="dialog" aria-controls="drawer">Contact Dwight</button><span class="shared">For CoverCore Member Agents.</span></div>
+  <div id="credit">A narrated 5-minute walk-through of the StudioGuard Premiere deck (agent webinar Thu, Nov 19, 2026, 1 PM CT) from Stuckey &amp; Company. Coverage, limits and eligibility vary by class, state and underwriting. TRiMRisk is not insurance. Narration voice is AI-generated.</div>
+ </div>
+<aside id="drawer" role="dialog" aria-modal="false" aria-labelledby="dtitle" hidden>
+ <div class="dhead"><div><div class="eyebrow">Stuckey &amp; Company</div><h2 id="dtitle">Contact Dwight</h2></div><button id="dclose" type="button" aria-label="Close contact panel">&times;</button></div>
+ <p class="dsub">Questions about StudioGuard or a creator account? The presentation keeps playing while this is open.</p>
+ <div class="dlinks"><a class="gbtn" href="https://calendly.com/dwightstuckey/" target="_blank" rel="noopener">Schedule a meeting &#8599;</a><a class="obtn" href="mailto:dwight@stuckey.com?subject=StudioGuard%20Premiere">Email dwight@stuckey.com</a></div>
+ <p class="dsub">StudioGuard questions: <a href="mailto:proquotes@stuckey.com">proquotes@stuckey.com</a><br>Profile and appointment: <a href="mailto:brandy@stuckey.com">brandy@stuckey.com</a></p>
+</aside>
+ <audio id="au" src="audio/studioguard-premiere-narration-v3b.mp3" preload="auto" playsinline></audio>
+</div>
+<script>window.TIMING={"total": 300.0, "tempo": 1.1, "segGap": 1.184, "partGap": 0.28, "words": 613, "slides": [{"id": "cover", "slide": 1, "start": 0.35, "speechEnd": 13.544, "actions": [], "end": 14.728, "title": "Cover", "show": 0.0}, {"id": "hosts", "slide": 2, "start": 14.728, "speechEnd": 25.336, "actions": [], "end": 26.52, "title": "Your hosts", "show": 14.178}, {"id": "market", "slide": 3, "start": 26.52, "speechEnd": 44.224, "actions": [], "end": 45.408, "title": "Agenda", "show": 25.97}, {"id": "stuckey", "slide": 4, "start": 45.408, "speechEnd": 55.398, "actions": [], "end": 56.583, "title": "Quote. Place. Grow.", "show": 44.858}, {"id": "opportunity", "slide": 5, "start": 56.583, "speechEnd": 69.483, "actions": [], "end": 70.668, "title": "The Opportunity Expands Your Book", "show": 56.033}, {"id": "boundaries", "slide": 6, "start": 70.668, "speechEnd": 81.109, "actions": [], "end": 82.294, "title": "What we don't write", "show": 70.118}, {"id": "layers", "slide": 7, "start": 82.294, "speechEnd": 100.008, "actions": [], "end": 101.192, "title": "Layered coverage", "show": 81.744}, {"id": "categories", "slide": 8, "start": 101.192, "speechEnd": 119.546, "actions": [{"t": 104.436, "a": "tip", "k": 0}, {"t": 107.112, "a": "tip", "k": 1}, {"t": 109.896, "a": "tip", "k": 4}, {"t": 113.522, "a": "tip", "k": null}], "end": 120.73, "title": "8 categories", "show": 100.642}, {"id": "trimrisk", "slide": 9, "start": 120.73, "speechEnd": 137.554, "actions": [], "end": 138.738, "title": "Embedded: Prevention as a Service", "show": 120.18}, {"id": "howitworks", "slide": 10, "start": 138.738, "speechEnd": 146.64, "actions": [], "end": 147.825, "title": "How it works in CoverCore", "show": 138.188}, {"id": "quotepath", "slide": 11, "start": 147.825, "speechEnd": 157.698, "actions": [], "end": 158.882, "title": "The quote path", "show": 147.275}, {"id": "stp", "slide": 12, "start": 158.882, "speechEnd": 171.087, "actions": [], "end": 172.271, "title": "Straight-through processing", "show": 158.332}, {"id": "pricing", "slide": 13, "start": 172.271, "speechEnd": 182.048, "actions": [], "end": 183.232, "title": "Straightforward pricing", "show": 171.721}, {"id": "leads", "slide": 14, "start": 183.232, "speechEnd": 197.218, "actions": [], "end": 198.403, "title": "Leads you didn't have to find", "show": 182.682}, {"id": "talktrack", "slide": 15, "start": 198.403, "speechEnd": 211.355, "actions": [], "end": 212.539, "title": "Start the conversation", "show": 197.853}, {"id": "share", "slide": 16, "start": 212.539, "speechEnd": 218.636, "actions": [], "end": 219.821, "title": "Share the application", "show": 211.989}, {"id": "setup", "slide": 17, "start": 219.821, "speechEnd": 233.523, "actions": [], "end": 234.707, "title": "Get set up", "show": 219.271}, {"id": "qa", "slide": 18, "start": 234.707, "speechEnd": 241.399, "actions": [], "end": 242.583, "title": "Q&A", "show": 234.157}, {"id": "countdown", "slide": 19, "start": 242.583, "speechEnd": 284.093, "actions": [{"t": 251.287, "a": "step", "k": 1}, {"t": 255.641, "a": "step", "k": 2}, {"t": 258.745, "a": "step", "k": 3}, {"t": 261.826, "a": "step", "k": 4}, {"t": 265.821, "a": "step", "k": 5}, {"t": 268.566, "a": "step", "k": 6}, {"t": 271.253, "a": "step", "k": 7}, {"t": 273.495, "a": "step", "k": 8}, {"t": 275.843, "a": "step", "k": 9}], "end": 285.277, "title": "Top 10 countdown", "show": 242.033}, {"id": "close", "slide": 20, "start": 285.277, "speechEnd": 298.799, "actions": [], "end": 300.0, "title": "Thank you", "show": 284.727}], "captions": [{"s": 0.35, "e": 1.72, "t": "Thirty-five years."}, {"s": 1.72, "e": 4.32, "t": "That's how long I've been in this business."}, {"s": 4.32, "e": 7.76, "t": "And I can honestly tell you, we have something special here."}, {"s": 7.76, "e": 11.09, "t": "I'm Dwight Stuckey, and this is the StudioGuard Premiere."}, {"s": 11.09, "e": 13.54, "t": "Insurance built for the creator economy."}, {"s": 14.73, "e": 25.34, "t": "Thursday, November 19th, at 1 PM Central, you'll meet my team: Libby on coverage and the quote path, Kami on leads and sharing, and Brandy on getting you set up."}, {"s": 26.52, "e": 27.84, "t": "So why now?"}, {"s": 27.84, "e": 33.43, "t": "Goldman Sachs and IAB put the creator economy at $250 billion in 2023."}, {"s": 33.43, "e": 37.82, "t": "By 2027? $480 billion. More than 50 million creators."}, {"s": 37.82, "e": 40.08, "t": "That's not a hobby market."}, {"s": 40.08, "e": 44.22, "t": "Those are businesses, and they need insurance that fits."}, {"s": 45.41, "e": 49.42, "t": "Quote. Place. Grow. That's what we do for agents."}, {"s": 49.42, "e": 55.4, "t": "Family owned for 35 years, with more than 1,200 partner agencies in 48 states."}, {"s": 56.58, "e": 60.47, "t": "Here's the big idea. StudioGuard expands your book."}, {"s": 60.47, "e": 63.53, "t": "Admitted markets handle the easy stuff."}, {"s": 63.53, "e": 67.54, "t": "Our surplus lines program covers everything around it."}, {"s": 67.54, "e": 69.48, "t": "874 eligible classes."}, {"s": 70.67, "e": 75.19, "t": "We're clear about what we don't write, so you never waste a submission."}, {"s": 75.19, "e": 77.37, "t": "A prospect fits one of these?"}, {"s": 77.37, "e": 81.11, "t": "Send it to proquotes@stuckey.com, and we'll look."}, {"s": 82.29, "e": 84.26, "t": "This is the heart of it."}, {"s": 84.26, "e": 87.83, "t": "Your client's work has layers. So does StudioGuard."}, {"s": 87.83, "e": 91.64, "t": "Picture a videographer. They start shooting on location?"}, {"s": 91.64, "e": 94.41, "t": "Add GL. They rent gear? Add property."}, {"s": 94.41, "e": 97.12, "t": "They store client footage? Add cyber."}, {"s": 97.12, "e": 100.01, "t": "Every step in the business adds a layer."}, {"s": 101.19, "e": 104.52, "t": "And who's it for? Look at your own book."}, {"s": 104.52, "e": 107.19, "t": "The photographer shooting local events."}, {"s": 107.19, "e": 109.98, "t": "The consultant selling an online course."}, {"s": 109.98, "e": 113.6, "t": "The developer building apps for small businesses."}, {"s": 113.6, "e": 115.65, "t": "They're already your clients."}, {"s": 115.65, "e": 119.55, "t": "Eight categories, and Creators lead at about $28 billion."}, {"s": 120.73, "e": 124.57, "t": "Insurance reacts. Prevention gets ahead of the claim."}, {"s": 124.57, "e": 128.17, "t": "So we built TRiMRisk right into the application."}, {"s": 128.17, "e": 132.49, "t": "Prevention as a Service. Lower loss ratios, higher retention."}, {"s": 132.49, "e": 134.38, "t": "And yes, that's Tiny."}, {"s": 134.38, "e": 137.55, "t": "Just remember, TRiMRisk is not insurance."}, {"s": 138.74, "e": 141.37, "t": "And it all works from your phone."}, {"s": 141.37, "e": 146.64, "t": "Tap Access CoverCore, and StudioGuard sits right on your Start a Quote row."}, {"s": 147.82, "e": 150.03, "t": "Here's the number to remember."}, {"s": 150.03, "e": 154.17, "t": "We estimate about 85% of applications go straight through."}, {"s": 154.17, "e": 157.7, "t": "Five steps, from the first screen to an issued policy."}, {"s": 158.88, "e": 159.99, "t": "How fast?"}, {"s": 159.99, "e": 164.11, "t": "About three minutes, quote to policy, from eight data points."}, {"s": 164.11, "e": 167.31, "t": "AI and third-party data build the head start."}, {"s": 167.31, "e": 171.09, "t": "Your client just confirms it. Less typing. More advice."}, {"s": 172.27, "e": 175.25, "t": "And the price is easy to talk about."}, {"s": 175.25, "e": 179.26, "t": "Starting at $350 a year, plus fees and taxes."}, {"s": 179.26, "e": 182.05, "t": "Premium financing is coming soon."}, {"s": 183.23, "e": 186.51, "t": "Now, growth. Leads you didn't have to find."}, {"s": 186.51, "e": 192.7, "t": "Our affiliate program finds creators in your market and drops them into your Pipeline tab."}, {"s": 192.7, "e": 195.61, "t": "The catch? Leads go to full profiles."}, {"s": 195.61, "e": 197.22, "t": "So finish yours."}, {"s": 198.4, "e": 202.16, "t": "Need an opener? Try this. Your work has changed."}, {"s": 202.16, "e": 205.4, "t": "Has your insurance kept up? Then listen."}, {"s": 205.4, "e": 211.36, "t": "And this Premiere goes on YouTube, so your clients hear the story before you call."}, {"s": 212.54, "e": 215.01, "t": "This one's huge. Share the application."}, {"s": 215.01, "e": 218.64, "t": "Your client does the typing, and you stay the agent of record."}, {"s": 219.82, "e": 222.02, "t": "Getting started is simple."}, {"s": 222.02, "e": 226.06, "t": "Log in through Access CoverCore, or click Get Appointed."}, {"s": 226.06, "e": 227.41, "t": "No minimums."}, {"s": 227.41, "e": 231.93, "t": "By our estimates, there are 27 million paid creators in the U.S."}, {"s": 231.93, "e": 233.52, "t": "Find your state."}, {"s": 234.71, "e": 235.89, "t": "Questions?"}, {"s": 235.89, "e": 241.4, "t": "Drop them in the Teams Q&A on the 19th, or email proquotes@stuckey.com."}, {"s": 242.58, "e": 244.74, "t": "Remember those 35 years?"}, {"s": 244.74, "e": 247.34, "t": "Here's why this one is special."}, {"s": 247.34, "e": 251.37, "t": "Ten things, never before together in one program."}, {"s": 251.37, "e": 255.72, "t": "Ten. A market headed to $480 billion."}, {"s": 255.72, "e": 258.83, "t": "Nine. Built only for creators."}, {"s": 258.83, "e": 261.91, "t": "Eight. CoverCore APIs."}, {"s": 261.91, "e": 265.9, "t": "Seven. An aggregator plus an exclusive program."}, {"s": 265.9, "e": 268.65, "t": "Six. Embedded prevention."}, {"s": 268.65, "e": 271.33, "t": "Five. Exclusive coverage."}, {"s": 271.33, "e": 273.57, "t": "Four. A fast start."}, {"s": 273.57, "e": 275.92, "t": "Three. Share links."}, {"s": 275.92, "e": 278.38, "t": "Two. Leads, delivered."}, {"s": 278.38, "e": 280.87, "t": "And number one? My favorite."}, {"s": 280.87, "e": 284.09, "t": "Join us live, and I'll show you myself."}, {"s": 285.28, "e": 290.08, "t": "So this week, complete your profile and quote your first creator client."}, {"s": 290.08, "e": 296.22, "t": "Book time with me at calendly.com/dwightstuckey, or email dwight@stuckey.com."}, {"s": 296.22, "e": 298.8, "t": "Built for creators. Placed by you."}]};</script>
+<script>(function(){
+// StudioGuard narrated live deck player. Adapted from the HartBeat player: same controls,
+// but the slides are the real v3 deck in an iframe, driven over postMessage on the timing.json schedule.
+const D=window.TIMING, S=D.slides, C=D.captions;
+const $=id=>document.getElementById(id);
+const player=$('player'), screen=$('screen'), frame=$('deckframe'), cap=$('cap'), wrap=$('wrap');
+const au=$('au'); let total=D.total, ccOn=true, started=false, dragging=false, idleT=null, ready=false, last='';
+const fmt=t=>{t=Math.max(0,Math.floor(t));return Math.floor(t/60)+':'+String(t%60).padStart(2,'0')};
+const TITLES=S.map(s=>s.title);
+function layout(){
+  const fs=player.classList.contains('fsmode');
+  const barH=fs?0:$('bar').offsetHeight, vw=player.clientWidth, vh=player.clientHeight;
+  const capRoom=Math.max(52,Math.min(104,vh*0.12));
+  let w=Math.min(vw,(vh-barH-capRoom)*16/9); const h=w*9/16;
+  screen.style.width=w+'px'; screen.style.height=h+'px';
+  cap.style.width=w+'px'; cap.style.minHeight=capRoom+'px';
+  cap.style.fontSize=Math.max(15,Math.min(30,w*0.021))+'px';
+}
+// deck state at time t: slide index, countdown step, tooltip row
+function stateAt(t){
+  let i=0; for(let k=0;k<S.length;k++){ if(t>=S[k].show) i=k; }
+  let step=0, tip=null;
+  for(const a of S[i].actions){ if(t>=a.t){ if(a.a==='step') step=a.k; if(a.a==='tip') tip=a.k; } }
+  return {i,step,tip};
+}
+function drive(t,force){
+  if(!ready) return;
+  const st=stateAt(t), key=st.i+'/'+st.step+'/'+st.tip;
+  if(key===last && !force) return; last=key;
+  frame.contentWindow.postMessage({sg:'show',slide:S[st.i].slide,step:st.step,tip:st.tip},'*');
+  $('stitle').textContent=(st.i+1)+' / '+S.length+' · '+TITLES[st.i];
+}
+function capAt(t){for(const c of C){if(t>=c.s&&t<c.e+0.12)return c.t}return ''}
+let lastCap=null;
+function tick(){
+  const t=au.currentTime||0; drive(t,false);
+  const c=capAt(t); if(c!==lastCap){lastCap=c; cap.innerHTML=c?'<span>'+c.replace(/&/g,'&amp;').replace(/</g,'&lt;')+'</span>':''}
+  if(!dragging) setPos(t);
+  $('time').textContent=fmt(t)+' / '+fmt(total);
+}
+function setPos(t){const p=Math.min(1,Math.max(0,t/total))*100; $('fill').style.width=p+'%'; $('knob').style.left=p+'%'}
+function loop(){tick(); if(!au.paused) requestAnimationFrame(loop)}
+function playIcon(){const p=au.paused; $('bplay').innerHTML=p?'<svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>':'<svg viewBox="0 0 24 24"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>'; $('bplay').setAttribute('aria-label',p?'Play':'Pause'); player.classList.toggle('paused',p)}
+function play(){ if(!ready) return; started=true; $('big').classList.add('hide'); if(au.ended||au.currentTime>=total-0.2){au.currentTime=0; last=''} const pr=au.play(); if(pr&&pr.catch) pr.catch(()=>{$('big').classList.remove('hide')}); }
+function toggle(){au.paused?play():au.pause()}
+function seek(t){t=Math.max(0,Math.min(total-0.05,t)); au.currentTime=t; drive(t,true); tick()}
+au.addEventListener('play',()=>{playIcon();requestAnimationFrame(loop);poke()});
+au.addEventListener('pause',()=>{playIcon();tick();player.classList.remove('idle')});
+au.addEventListener('ended',()=>{playIcon(); $('big').classList.remove('hide'); $('big').querySelector('.bl').textContent='Watch again'});
+au.addEventListener('seeked',tick); au.addEventListener('timeupdate',()=>{ if(au.paused) tick() });
+$('big').addEventListener('click',play);
+$('bplay').addEventListener('click',toggle);
+$('bprev').addEventListener('click',()=>{const t=au.currentTime; let i=stateAt(t).i; if(t-S[i].show<2&&i>0)i--; seek(S[i].show+0.01)});
+$('bnext').addEventListener('click',()=>{const i=stateAt(au.currentTime).i; if(i<S.length-1) seek(S[i+1].show+0.01)});
+$('bcc').addEventListener('click',()=>{ccOn=!ccOn; cap.classList.toggle('off',!ccOn); $('bcc').classList.toggle('act',ccOn); $('bcc').setAttribute('aria-pressed',ccOn)});
+$('shield').addEventListener('click',()=>{ if(started) toggle(); else play() });
+function isFs(){return document.fullscreenElement||document.webkitFullscreenElement||player.classList.contains('pseudo')}
+function fs(){
+  if(isFs()){ if(document.exitFullscreen&&document.fullscreenElement) document.exitFullscreen(); else if(document.webkitExitFullscreen&&document.webkitFullscreenElement) document.webkitExitFullscreen(); else {player.classList.remove('pseudo','fsmode'); layout()} return }
+  const r=player.requestFullscreen||player.webkitRequestFullscreen;
+  if(r){ try{ const p=r.call(player); if(p&&p.catch)p.catch(()=>{player.classList.add('pseudo','fsmode');layout()}) }catch(e){player.classList.add('pseudo','fsmode');layout()} }
+  else { player.classList.add('pseudo','fsmode'); layout() }
+}
+function onFs(){player.classList.toggle('fsmode',!!(document.fullscreenElement||document.webkitFullscreenElement)); setTimeout(layout,50)}
+document.addEventListener('fullscreenchange',onFs); document.addEventListener('webkitfullscreenchange',onFs);
+$('bfs').addEventListener('click',fs);
+function poke(){player.classList.remove('idle'); clearTimeout(idleT); idleT=setTimeout(()=>{ if(!au.paused) player.classList.add('idle') },2500)}
+player.addEventListener('mousemove',poke); player.addEventListener('touchstart',poke,{passive:true});
+const sc=$('scrub');
+function tAt(x){const r=sc.getBoundingClientRect(); return Math.min(1,Math.max(0,(x-r.left)/r.width))*total}
+sc.addEventListener('pointerdown',e=>{dragging=true; sc.setPointerCapture(e.pointerId); setPos(tAt(e.clientX))});
+sc.addEventListener('pointermove',e=>{const t=tAt(e.clientX); const tp=$('tipx'); tp.style.display='block'; tp.style.left=(t/total*100)+'%'; tp.textContent=fmt(t)+' · '+TITLES[stateAt(t).i]; if(dragging) setPos(t)});
+sc.addEventListener('pointerleave',()=>{$('tipx').style.display='none'});
+sc.addEventListener('pointerup',e=>{ if(!dragging) return; dragging=false; seek(tAt(e.clientX)); $('tipx').style.display='none'});
+sc.addEventListener('pointercancel',()=>{dragging=false});
+S.forEach((s,k)=>{ if(k===0) return; const d=document.createElement('div'); d.className='tick'; d.style.left=(s.show/total*100)+'%'; sc.appendChild(d) });
+document.addEventListener('keydown',e=>{
+  const k=e.key;
+  if(k===' '||k==='k'||k==='K'){e.preventDefault(); toggle()}
+  else if(k==='ArrowRight'){e.preventDefault(); seek(au.currentTime+5)}
+  else if(k==='ArrowLeft'){e.preventDefault(); seek(au.currentTime-5)}
+  else if(k==='f'||k==='F'){fs()}
+  else if(k==='c'||k==='C'){$('bcc').click()}
+  else if(k==='n'||k==='N'){$('bnext').click()}
+  else if(k==='p'||k==='P'){$('bprev').click()}
+  else if(k==='Escape'&&!dr.hidden){closeD()}
+});
+window.addEventListener('resize',layout); window.addEventListener('orientationchange',()=>setTimeout(layout,200));
+const dr=$('drawer');
+function openD(){dr.hidden=false; player.classList.add('dopen'); setTimeout(layout,0); $('dclose').focus()}
+function closeD(){dr.hidden=true; player.classList.remove('dopen'); setTimeout(layout,0); $('bcontact').focus()}
+$('bcontact').addEventListener('click',e=>{e.stopPropagation(); dr.hidden?openD():closeD()});
+$('dclose').addEventListener('click',closeD);
+// deck handshake
+window.addEventListener('message',e=>{const m=e.data||{};
+  if(m.sg==='ready'&&!ready){ready=true; player.classList.remove('loading'); $('big').querySelector('.bl').textContent='Play · 5 minutes with sound'; last=''; drive(au.currentTime||0,true); window.__deckReady=true}
+  if(m.sg==='ack'){window.__deckAck=m}
+});
+// test hook: ?t=SECONDS opens at that moment (paused)
+const q=new URLSearchParams(location.search);
+layout(); playIcon(); tick();
+if(q.has('t')){const t=parseFloat(q.get('t'))||0; au.currentTime=t; const w=setInterval(()=>{ if(ready){clearInterval(w); seek(t); if(q.has('nobig')) $('big').classList.add('hide')} },50)}
+if(q.has('contact')) openD();
+})();
+</script>
+</body></html>
